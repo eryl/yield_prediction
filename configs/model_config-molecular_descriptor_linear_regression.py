@@ -1,0 +1,6 @@
+from yieldprediction.models.model import ModelConfig
+from yieldprediction.models.learningalgorithms.molecular_descriptor_logistic_regression import LogisticRegressionConfig, MolecularDescriptorLogisticRegression
+
+lr_config = LogisticRegressionConfig()
+
+model_config = ModelConfig(model_type=MolecularDescriptorLogisticRegression, model_kwargs=dict(config=lr_config))
